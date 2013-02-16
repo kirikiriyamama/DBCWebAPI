@@ -1,0 +1,24 @@
+type: map
+mapping:
+  'database':
+    type: map
+    mapping:
+      'dbms':
+        type: str
+        required: true
+        unique: true
+        enum:
+          - mysql
+          - postgres
+      'host': { type: str, unique: true }
+      'port': { type: int, unique: true }
+      'username': { type: str, required: true, unique: true }
+      'password': { type: str, required: true, unique: true }
+      'dbname': { type: str, required: true, unique: true }
+      'socket': { type: str, unique: true }
+      'encoding': { type: str, unique: true }
+  'auth':
+    type: map
+    mapping:
+      'username': { type: str, required: true, unique: true }
+      'password': { type: str, required: true, unique: true }

@@ -1,0 +1,25 @@
+### Connection info of the database ###
+# dbms: DBMS to be connected [mysql, postgres] (required)
+# host: Host name or IP address of the connection (default: localhost)
+# port: Connection port number (default: mysql:3306, postgres:5432)
+# username: User name to database connection (required)
+# password: Password to database connection (required)
+# dbname: Database name to be connected (required)
+## If dbms is postgres, it is not necessary to set
+# socket: Path of Unix domain socket (default: /tmp/mysql.sock)
+# encoding: Connection encoding (default: utf8)
+database:
+  dbms: 
+  host: 
+  port: 
+  username: 
+  password: 
+  dbname: 
+  socket: 
+  encoding: 
+### User info of the authentication ###
+# username: User name to access API (required)
+# password: Password to access API (required)
+auth:
+  username: 
+  password: 
