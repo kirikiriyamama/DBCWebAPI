@@ -7,11 +7,10 @@ Bundler.require
 
 PATH = File.expand_path(File.dirname(__FILE__))
 require "#{PATH}/app"
-config = load_YAML("#{PATH}/schema/config_schema.yaml",
-	               "#{PATH}/conf/config.yaml")
+config = load_YAML("#{PATH}/schema/config_schema.yaml", "#{PATH}/conf/config.yaml")
 
 use Rack::Auth::Basic, 'DatabaseConnector' do |user, pass|
-	user == config[:auth][:username] && pass == config[:auth][:password]
+  user == config[:auth][:username] && pass == config[:auth][:password]
 end
 
 run DatabaseConnector

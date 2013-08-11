@@ -11,6 +11,6 @@ gem 'pg', '~> 0.14'
 gem 'kwalify', '~> 0.7'
 
 group :development do
-	require 'pp'
-	gem 'sinatra-contrib', '~> 1.3', require: 'sinatra/reloader'
+  require 'pp'
+  gem 'sinatra-contrib', '~> 1.3', require: 'sinatra/reloader'
 end
